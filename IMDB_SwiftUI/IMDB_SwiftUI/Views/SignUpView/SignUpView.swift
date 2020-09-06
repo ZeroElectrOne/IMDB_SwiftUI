@@ -11,7 +11,8 @@ import SwiftUI
 struct SignUpView: View {
     @State var emailAddress: String
     @State var password: String
-    
+    @State var conformPassword: String
+
     var body: some View {
         ZStack {
             Color(red: 0.33, green: 0.36, blue: 0.41).edgesIgnoringSafeArea(.all)
@@ -35,7 +36,7 @@ struct SignUpView: View {
 
 struct SignUpView_Previews: PreviewProvider {
     static var previews: some View {
-        SignUpView(emailAddress: "", password: "")
+        SignUpView(emailAddress: "", password: "", conformPassword: "")
     }
 }
 
